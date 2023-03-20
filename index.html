@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한다빈 포트폴리오</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'>
+  <!-- mobile.css: 767px까지(모바일) -->
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+  <!-- pc.css: 768px 부터(큰화면) - Breakpoint(중단점) -->
+  <link rel="stylesheet" href="css/pc.css" media="screen and (min-width: 768px)">
+</head>
+
+<body>
+  <!-- 메뉴는 fullpage 바깥에 추가 
+  data-menuanchor와 동명의 섹션 id 값을 fullpage({}) 옵션anchors[]에 추가
+-->
+  <ul id="menu">
+    <li data-menuanchor="HOME" class="active"><a href="#HOME">HOME</a></li>
+    <li data-menuanchor="PROFILE"><a href="#PROFILE">PROFILE</a></li>
+    <li data-menuanchor="WORK"><a href="#WORK">WORK</a></li>
+    <li data-menuanchor="CONTACT"><a href="#CONTACT">CONTACT</a></li>
+  </ul>
+  <div id="fullpage">
+    <div class="section" id="section1">
+      <p class="top">WEB</p>
+      <div class="typing-txt1">
+        <ul>
+          <li>HELLO,</li>
+          <li>WORLD!</li>
+        </ul>
+      </div>
+      <div class="typing-txt2">
+        <ul>
+          <li>WELCOME TO MY PORTFOLIO!</li>
+        </ul>
+      </div>
+      <div class="typing">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <p class="bottom">DESIGNER</p>
+    </div>
+
+    <div class="section" id="section2">
+      <div class="profile">
+        <div class="left">
+          <div class="col">
+            <h4>Name</h4>
+            <p>한다빈</p>
+          </div>
+          <div class="col">
+            <h4>Birth</h4>
+            <p>1997년 07월 08일</p>
+          </div>
+          <div class="col">
+            <h4>Certificate</h4>
+            <p>전산회계 1급<br>
+              <br>
+              <span>웹디자인 기능사 (필기)</span><br>
+               <br>
+              <span>운전 면허 2종 보통</span>
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="col">
+            <h4>Education</h4>
+            <p>2022. 09&emsp;김포이젠아카데미 UI/UX 반응형 웹디자인 수료
+              <br>
+              2019. 02&emsp;유한대학교 외식조리경영과 졸업
+              <br>
+              2016. 02&emsp;풍무고등학교 졸업
+            </p>
+          </div>
+          <div class="col">
+            <h4>Skill</h4>
+            <div class="skill">
+              <img src="./images/Ps.png" alt="Ps">
+              <img src="./images/Ai.png" alt="Ai">
+              <img src="./images/Figma.png" alt="Figma">
+              <img src="./images/HTML.png" alt="HTML">
+              <img src="./images/CSS.png" alt="CSS">
+              <img src="./images/JS.png" alt="JS">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section3">
+      <div class="slide slide1" data-anchor="slide1">
+        <div class="type">
+          <h6>Responsive</h6>
+        </div>
+        <div class="work">
+          <div class="info">
+            <h4>올림푸스한국 의료사업 사이트<br>
+              반응형 리뉴얼
+            </h4>
+            <img src="./images/orympus.png" alt="올림푸스 코리아" class="mobile">
+            <h6><span>작업기간</span><br>
+              14일
+            </h6>
+            <h6><span>기여도</span><br>
+              20% - 팀 프로젝트(5명)
+            </h6>
+            <h6><span>사용툴</span><br>
+              Figma, Adobe Photoshop, Visual Studio Code
+            </h6>
+            <div class="add">
+              <a href="https://handabin.github.io/Olympus-Korea-team/" target="_blank" class="page">페이지 바로가기</a>
+              <a href="./pdf/OLYMPUS-DETAIL.pdf" target="_blank" class="detail">상세정보</a>
+            </div>
+          </div>
+          <img src="./images/orympus.png" alt="올림푸스 코리아" class="pc">
+        </div>
+      </div>
+
+      <div class="slide slide2" data-anchor="slide2">
+        <div class="type">
+          <h6>Mobile</h6>
+        </div>
+        <div class="work">
+          <div class="info">
+            <h4>리퍼브마켓<br>모바일 사이트 리뉴얼</h4>
+            <img src="./images/Seocho-Animal-Center.png" alt="리퍼브마켓" class="mobile">
+            <h6><span>작업기간</span><br>
+              7일
+            </h6>
+            <h6><span>기여도</span><br>
+              30% - 팀 프로젝트(4명 - 팀장)
+            </h6>
+            <h6><span>사용툴</span><br>
+              Figma, Adobe Photoshop, Visual Studio Code
+            </h6>
+            <div class="add">
+              <a href=" https://handabin.github.io/team-refurb-market-mobile_-/" target="_blank" class="page"
+                onClick="window.open(this.href, '', 'width=375, height=667'); return false;">페이지 이동</a>
+              <a href="./pdf/Refurbmarket-DETAIL.pdf" target="_blank" class="detail">상세정보</a>
+            </div>
+          </div>
+          <img src="./images/refurb-market.png" alt="리퍼브마켓" class="pc">
+        </div>
+      </div>
+
+      <div class="slide slide3" data-anchor="slide3">
+        <div class="type">
+          <h6>Web</h6>
+        </div>
+        <div class="work">
+          <div class="info">
+            <h4>Bride And You 홈페이지<br>리뉴얼</h4>
+            <img src="./images/BrideAndYou.png" alt="Bride And You" class="mobile">
+            <h6><span>작업기간</span><br>
+              6일
+            </h6>
+            <h6><span>기여도</span><br>
+              100% - 개인 프로젝트
+            </h6>
+            <h6><span>사용툴</span><br>
+              Figma, Visual Studio Code
+            </h6>
+            <div class="add">
+              <a href=" https://handabin.github.io/BrideAndYou/" target="_blank" class="page">페이지 이동</a>
+              <a href="./pdf/BrideAndYou-DETAIL.pdf" target="_blank" class="detail">상세정보</a>
+            </div>
+          </div>
+          <img src="./images/BrideAndYou.png" alt="Bride And You" class="pc">
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section4">
+      <div class="contact">
+        <h1>
+          THANK YOU FOR <br class="br">WATCHING<br>
+          AND<br>
+          CONTACT ME!
+        </h1>
+        <div class="sns">
+          <div class="phone">
+            <a href="tel:010-6318-5883">
+              <img src="./images/phone.jpg" alt="전화번호">
+              010-6318-5883
+            </a>
+          </div>
+          <div class="kakao">
+            <a href="http://qr.kakao.com/talk/c1389CJCLxGTa8Lw80tVqD1Er60-">
+              <img src="./images/kakaotalk.jpg" alt="카카오톡">
+              ekqlsgks123
+            </a>
+          </div>
+          <div class="e-mail">
+            <a href="mailto:dabin970708@naver.com">
+              <img src="./images/mail.jpg" alt="이메일">
+              dabin970708@naver.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js'></script>
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
